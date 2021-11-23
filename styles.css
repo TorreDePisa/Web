@@ -1,0 +1,291 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Aquí puede cambiar el fondo de la página */
+    background: linear-gradient(0deg, #00bb2d, #fef, #cf2734);
+    /* Color de las letras en general */
+    color: #fff;
+    /* Tamaño de la fuente de las letras en el cuerpo de la pagina */
+    font-size: 16px;
+    /* Aquí indica la fuente general que se va a usar en la pagina */
+    font-family: 'MuseoModerno', cursive;
+}
+
+/* Scroollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Color del fonde de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+    background: #171719;
+    /*border-radius: 25px;*/
+}
+/* Color de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 25px;
+}
+
+/* Nav */
+.nav-main {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 30px 0;
+    /* color del fondo del nav */
+    background:#00bb2d;
+    /*padding: 10px;
+    padding-bottom: 20px;*/
+}
+
+.nav-main img {
+    padding: 5px;
+    align-items: center;
+}
+
+a {
+    /* Color de la letra del nav */
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-brand {
+    height: 50px;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.name {
+    display: flex;
+    flex: 1;
+    margin-left: 5px;
+}
+
+.nav-main ul {
+    display: flex;
+}
+
+.nav-main ul li {
+    padding: 15px;
+}
+
+.nav-main ul li a {
+    padding: 3px;
+}
+
+/* Botones del nav */
+.btn {
+    font-family: 'MuseoModerno', cursive;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+    padding: 10px 20px;
+    /* Color de la letra */
+    color: #fff;
+    /* Tamaño de la letra */
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Efecto de los botones al pasar el mouse por encima */
+.btn:hover {
+    /* Tamaño y color del borde*/
+    outline: 1px solid #fff;
+    border-radius: 3.5px;
+    /* color de la letra */
+    color: #fff;
+    transition: .5s;
+}
+
+/*.nav-main ul li a:hover {
+    opacity: .8;
+    /*border-bottom: 2px solid black;
+}*/
+
+/* Encabezado */
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.showcase {
+    width: 100%;
+    height: 650px;
+    /* Imagen de fondo del encabezado */
+    background: url(showcase-wall.jpg) no-repeat center center/cover;
+    margin-top: 20px;
+    padding: 15px;
+    padding-top: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Color de la letra */
+    color: #fff;
+    /* Redondeo del encabezado, puede sacarlo o aumentarlo */
+    border-radius: 10px;
+    /* Sombra de las letras */
+    text-shadow: 2px  0px 0px black,
+                 0px  2px 0px black,
+                -2px  0px 0px black,
+                0px -2px 0px black;
+}
+
+/* Boton del encabezado */
+.btn-showcase {
+    background: #fff;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: #171719;
+    font-size: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-shadow: none;
+}
+
+/* Efecto de los botones al pasar el mouse por encima */
+.btn-showcase:hover {
+    /* Tamaño y color del borde */
+    outline: 2px solid #171719;
+    /* Color de la letra */
+    color: #333;
+}
+
+.showcase h2{
+    text-align:center;
+    margin-bottom: 10px;
+    /* Tamaño de la letra */
+    font-size: 40px;
+}
+
+.showcase p {
+    text-align:center;
+    /* Tamaño de la letra */
+    font-size: 20px;
+}
+
+#abaut-us {
+    width: 100%;
+    height: auto;
+    /* Imagen de fondo */
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Redondeo del encabezado, puede sacarlo o aumentarlo */
+    border-radius: 10px;
+    /* Color de la letra */
+    color: #000;
+}
+
+#abaut-us h2 {
+    text-align:center;
+    margin: 5px;
+}
+
+#abaut-us p {
+    font-size: 22px;
+    text-align: center;
+    padding: 10px;
+}
+/* Footer */
+
+.footer {
+    background: #cf2734;
+}
+
+/* Social */
+
+.social {
+    margin: 20px;
+    text-align: center;
+    color: #eee;
+}
+
+.social p {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    margin: 0 20px;
+}
+
+.links a i {
+    font-size: 3rem;
+}
+
+.whatsapp {
+    padding: 10px 15px;
+}
+
+.facebook {
+    padding: 15px 15px;
+}
+
+/*.instagram:hover {
+    background: linear-gradient(35deg, orange, red,  purple);
+    color: #fff;
+    border-radius: 25%
+}*/
+
+.facebook:hover {
+    background: #14a2f9;
+    color: #fff;
+    border-radius: 50%;
+}
+
+.whatsapp:hover {
+    background: #74e701;
+    color: #fff;
+    border-radius: 50%;
+}
+
+/* Enlace para hacer tu propia web */
+
+.web {
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.web a {
+    margin-right: 0;
+}
+
+.web a:hover {
+    opacity: 0.7;
+}
+
+/* Footer text */
+
+.footer-text {
+    text-align: center;
+    padding: 10px;
+    color: #eee;
+}
+
+@media (max-width: 551px){
+    .nav-main ul {
+    display: none;
+    }
+}
